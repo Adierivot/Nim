@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 /**
 * This is the player interface that provides methods to be used in the Human, 
 * Stupid and Smart classes

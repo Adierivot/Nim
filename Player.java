@@ -74,9 +74,55 @@ public int move(int marbles){
 	} else {
 		System.out.println(name + " has removed 1 marble");
 			}
-			
-			return remove 
+	return remove; 
 	}
 }
 
 
+/**
+* This is the stupid computer class.
+* The computer removes a random number of 
+* marbles between 1 and n/2 each turn
+*/
+class Stupid implements Player {
+	private int remove; 
+	String name;
+	
+/**
+* Gets the name of the player
+* @return the name of the player
+*/
+
+public String getName() {
+	Scanner scan = new Scanner(System.in);
+	System.out.println("What is the stupid computer's name?  ");
+	name = scan.nextLine();
+	return name;
+}
+
+/**
+* Conducts the move for the the stupid computer
+* and returns the number of marbles left in the pile
+* @param marbles the number of marbles in the pile 
+* @return the number of marbles remaining after move
+*/
+
+public int move(int marbles){
+
+//Generate Random Object 
+Random rand = new Random();
+
+//Remove random number of marbles 
+
+remove = (1+ rand.nextInt(marbles/2));
+
+if(remove >1) {
+		System.out.println(name + " has removed " + remove + " marbles");
+	} else {
+		System.out.println(name + " has removed 1 marble");
+			}
+	return remove;
+	}
+}
+
+ 

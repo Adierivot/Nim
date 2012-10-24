@@ -1,7 +1,18 @@
-This is the README file that will be used for this project .
+This is the README file that will be used for this project.
+This the ever classic game of Nim written in the JAVA programming language 
 
-This the ever classic game of Nim writin in the JAVA programming language 
+Before you play
+==============================================
+Simply unpack all files into a folder of your choosing. Then compile and run the main.java 
 
-Instructions on how to play
+Enjoy beating all your friends or challenge the Watson-like skills of Smart computer.
+
+Instructions on how to play the game
 ===============================================
-1.
+1) Select Player 1 Type. Then Insert Player Name 
+2) Repeat Step 1 for Player 2.
+3) Player 1 and 2 make their moves until the end of the game
+
+
+NOTE: The game is written in a way that if you start it, I will assume you want to at least play one game as the option to play another game or quit given at the end of each game (Why would you not want to play another game anyway??!!) 
+

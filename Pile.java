@@ -16,7 +16,7 @@ public class Pile {
 	* Creates a Pile object
 	*/
 	
-	public pile()
+	public Pile()
 	{
 		Random rand = new Random();
 		marbles = rand.nextInt(91)+10;
@@ -39,7 +39,7 @@ public class Pile {
 	public int updatedSize(int removed)
 	{
 		marbles = marbles - removed;
-		return marbles
+		return marbles;
 	}
 
 }	

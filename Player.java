@@ -51,7 +51,7 @@ public String getName(){
 public int move(int marbles){
 	int count = 0; //counter for error message
 	Scanner scan= new Scanner(System.in);
-	System.out.prin("Hey " + name + ", How many marbles do you " + "want to remove?  ");
+	System.out.print("Hey " + name + ", How many marbles do you " + "want to remove?  ");
 	remove = scan.nextInt();
 
 	boolean goodInput = (remove <= ((marbles/2))) && (remove > 0);

@@ -36,7 +36,7 @@ String name;
 
 public String getName(){
 	Scanner scan = new Scanner(System.in);
-	System.out.println("What is your name?  ");
+	System.out.print("What is your name?  ");
 	name = scan.nextLine();
 	return name;
 }
@@ -95,7 +95,7 @@ class Stupid implements Player {
 
 public String getName() {
 	Scanner scan = new Scanner(System.in);
-	System.out.println("What is the stupid computer's name?  ");
+	System.out.print("What is the stupid computer's name?  ");
 	name = scan.nextLine();
 	return name;
 }

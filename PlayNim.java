@@ -9,14 +9,14 @@ import java.util.Scanner;
 
 public class PlayNim {
 
-	int marbles;
-	int removed;
-	int count = 1;
-	int num;
-	boolean gameOver = (marbles == );
-	String a;
-	String b;
-	public PlayNim(){}
+	int marbles;							//amount of marbles in the pile 
+	int removed;							//amount of marbles removed 
+	int count = 1;							//count of the game
+	int num;								//number that relates to the type of player
+	boolean gameOver = (marbles == 1 );		//condition for game to be over
+	String a = " Player 1 Wins!!!!! GAME OVER";								//message if player one wins
+	String b = " Player 2 Wins!!!!! GAME OVER";							    //message if player two wins
+	public PlayNim(){}						
 	
 /**
 * The Play method conducts the game using the pile class and the Player 

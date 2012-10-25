@@ -67,6 +67,33 @@ public void play() {
 	
 	//Run the game
 	do{
+		System.out.println("There are now " + marbles + " marbles");
+		removed = x.move(marbles);
+		marbles = gamePile.updatedSize(removed); // updated pile
+		if(marbles == 1) //if game is over
+		{
+			System.out.println(a);
+			break;
+		}
 		
+		System.out.println("There are now " + marbles + " marbles");
+		removed = y.move(marbles);
+		marbles = gamePile.updatedSize(removed); // updated pile
+		if(marbles == 1) // if game is over
+		{
+			System.out.println(b);
+			break;
+		}
 	
-	} while(!gameOver);
+	} while(!gameOver); // while the game is not over yet
+	
+	System.out.print(" Would you like to play again?  ");
+	String input = scan.next();
+	if(input.equalsIgnoreCase("Y")) {
+		count++;
+		System.out.println("Of course, you would!");
+		play(); // play again
+		
+		}
+	}
+} 

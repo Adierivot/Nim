@@ -125,4 +125,60 @@ if(remove >1) {
 	}
 }
 
- 
+/**
+* This is the smart computer class.
+* The smart computer removes exactly enough marbles to make the 
+* remaining pile a power of two minus one (1, 3, 7, 15, 31, or 63)
+*/ 
+
+class Smart implements Player {
+	private int remove;
+	String name;
+	
+	/**
+	* Gets the Name of the player
+	* @return the name of the player 
+	*/
+	public String getName() {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("What is the smart computer's name?  ");
+		name = scan.nextLine();
+		return name;
+		}
+		
+	/**
+	* Conducts the move for the smart computer and 
+	* returns the number fof marbles left
+	* @param marbles the number of marbles in the pile 
+	* @return the number of marbles remaining after move
+	*/
+	
+	public int move(int marbles) {
+	
+		Random rand = new Random();
+		
+		if(marbles == 3 || marbles == 7 || marbles == 15 || marbles == 31 || marbles == 63) {
+			//removes random number if values are (3, 7, 15, 31, or 63)
+			remove = (1 + rand.nextInt(marbles / 2));
+		} else if (marbles > 63) {
+			remove = marbles - 63;
+		} else if (marbles > 31) {
+			remove = marbles - 31;
+		} else if (marbles > 15) {
+			remove = marbles - 15;
+		} else if (marbles > 7) {
+			remove = marbles - 7;
+		}else if (marbles > 3) {
+			remove = marbles - 3;
+		} else {
+			remove = 1;
+		}
+		if(remove > 1) {
+		System.out.println(name + " has removed " + remove + " marbles");
+		}
+		 else {
+		 	System.out.println(name + " has removed 1 marble");
+		 }
+		 	return remove;
+		 }
+}

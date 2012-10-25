@@ -25,6 +25,10 @@ public class PlayNim {
 */
 
 public void play() {
+System.out.println("===========================================================================");
+System.out.println("The Amazing Game of Nim");
+System.out.println("===========================================================================");
+
 	Scanner scan = new Scanner(System.in);
 	
 	//Create the pile object 
@@ -87,11 +91,11 @@ public void play() {
 	
 	} while(!gameOver); // while the game is not over yet
 	
-	System.out.print(" Would you like to play again?  ");
+	System.out.print("Would you like to play again?  ");
 	String input = scan.next();
 	if(input.equalsIgnoreCase("Y")) {
 		count++;
-		System.out.println("Of course, you would!");
+		System.out.println("Of course, you would!!!");
 		play(); // play again
 		
 		}
